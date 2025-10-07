@@ -1,0 +1,16 @@
+<template>
+  <lightning-card title="Student Info">
+     <lightning-layout multiple-rows>
+      <lightning-layout-item size="8">
+        <ul>
+          <template for:each={studentInfoParent} for:item="student">
+            <li key={student.rollnumber}>
+              <c-std-info student-info={student}></c-std-info>
+            </li>
+          </template>
+        </ul>
+      </lightning-layout-item>
+    </lightning-layout>
+  </lightning-card>
+</template>
+ 
